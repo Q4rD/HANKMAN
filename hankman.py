@@ -34,10 +34,10 @@ def game():
     win=[]
 
     # Список #####################
-    with open('/content/drive/MyDrive/ColabNotebooks/list/words2.txt', 'r') as w:
+    with open('words2.txt', 'r') as w:
         for i in w:
             # Рандомное слово ############
-            w1 = random.choice(list(open('/content/drive/MyDrive/ColabNotebooks/list/words2.txt')))
+            w1 = random.choice(list(w))
 
     d1 ="".join(c for c in w1 if c.isalpha())
     w1= w1.rstrip('\n')
