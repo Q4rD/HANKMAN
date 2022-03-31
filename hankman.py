@@ -43,7 +43,7 @@ def game():
     w1= w1.rstrip('\n')
     d1 = w1
     d2=len(d1)
-    print("слово: ",d1)
+    #print("слово: ",d1)
     ###############################   
     iAttempts = True
 
