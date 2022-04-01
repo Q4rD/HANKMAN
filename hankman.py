@@ -24,7 +24,6 @@ def game():
     elif dific == "4":
         attempt = 1
         print(ots1,"dific: HAHAHAHAHAHAHAHA...",ots2)
-        print(ots)
     sleep(1)
     clear()
     print(ots1,"чтобы выйти напишите: exit\nнапишите health чтобы добавить +3 попытки",ots2)
