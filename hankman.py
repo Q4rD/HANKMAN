@@ -14,16 +14,16 @@ def game():
     dific = input("dificults: \n1. easy \n2. normal \n3. hard \n4. HAHAHAHAHAHAHAHA...\nсложность: ")
     if dific == "1":
         attempt = 20
-        print("dific: easy")
+        print(ots1,"dific: easy",ots2)
     elif dific == "2":
         attempt = 10
-        print("dific: normal")
+        print(ots1,"dific: normal",ots2)
     elif dific == "3":
         attempt = 5
-        print("dific: hard")
+        print(ots1,"dific: hard",ots2)
     elif dific == "4":
         attempt = 1
-        print("dific: HAHAHAHAHAHAHAHA...")
+        print(ots1,"dific: HAHAHAHAHAHAHAHA...",ots2)
         print(ots)
     sleep(1)
     clear()
