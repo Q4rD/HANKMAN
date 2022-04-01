@@ -75,7 +75,8 @@ def game():
             if let != "health":
                 if let in usedln or len(let)>1:
                     clear()
-                    print(ots1,"Не больше одного символа, попробуйте снова!\nиспользованные БуКвЫ:",','.join(usedln),ots2)
+                    sim =','.join(usedln)
+                    print(ots1,"Не больше одного символа, попробуйте снова!\nиспользованные БуКвЫ:",sim,ots2)
                 else:
                     usedln+=let
                     break
