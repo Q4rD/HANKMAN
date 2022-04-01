@@ -26,7 +26,7 @@ def game():
         print(ots1,"dific: HAHAHAHAHAHAHAHA...",ots2)
     sleep(1)
     clear()
-    print(ots1,"чтобы выйти напишите: exit\nнапишите health чтобы добавить +3 попытки",ots2)
+    print(ots1,"чтобы выйти напишите: exit\nнапишите bonus чтобы добавить +3 попытки",ots2)
     ###############
     test=False
     usedln=""
@@ -62,17 +62,17 @@ def game():
                 clear()
                 quit()
 
-    ##### аптечка ####################
-            if let == "health":   
+    ##### Бонус ####################
+            if let == "bonus":   
                 clear()
                 if iAttempts == True:           
-                    print(ots1,"Вы использовали аптечку!!!",ots2)
+                    print(ots1,"Вы использовали бонус!!!",ots2)
                     attempt +=3
                     iAttempts = False 
                 elif iAttempts == False:
-                    print(ots1,"Вы УЖЕ использовали аптечку!!!",ots2)
+                    print(ots1,"Вы УЖЕ использовали бонус!!!",ots2)
     ###################################            
-            if let != "health":
+            if let != "bonus":
                 if let in usedln or len(let)>1:
                     clear()
                     sim =','.join(usedln)
