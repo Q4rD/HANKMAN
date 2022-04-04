@@ -137,10 +137,3 @@ def game():
         else:
             clear()
             quit()
-
-        # sleep(1)
-        # clear()
-        # print(ots1,"ВЫ ПРОИГРАЛИ! ПОПРОБУЙТЕ СНОВА!", "\n слово было: ", d1.upper(),ots2)
-        # sleep(3)
-        # clear()
-        # quit()
