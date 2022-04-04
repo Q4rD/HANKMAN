@@ -111,9 +111,36 @@ def game():
         clear()
         quit()
     else:
-        sleep(1)
-        clear()
-        print(ots1,"ВЫ ПРОИГРАЛИ! ПОПРОБУЙТЕ СНОВА!", "\n слово было: ", d1.upper(),ots2)
-        sleep(3)
-        clear()
-        quit()
+        clear = lambda: os.system('clear')
+
+        frame1 = '( /-_-)/играли'
+        frame2 = '  про\n\(-_-)/'
+        frame3 = 'вы\(-_-\)'
+        frame4 ='(-_-)'
+
+
+        a = 1
+        while a < 8:
+            a=a+1
+            sleep(0.4)
+            clear()
+            print(frame3)
+            sleep(0.4)
+            clear()
+            print(frame2)
+            sleep(0.4)
+            clear()
+            print(frame1)
+            sleep(0.4)
+            clear()
+            print(frame2)
+        else:
+            clear()
+            quit()
+
+        # sleep(1)
+        # clear()
+        # print(ots1,"ВЫ ПРОИГРАЛИ! ПОПРОБУЙТЕ СНОВА!", "\n слово было: ", d1.upper(),ots2)
+        # sleep(3)
+        # clear()
+        # quit()
