@@ -48,6 +48,7 @@ def game():
 
     d1 ="".join(c for c in w1 if c.isalpha())
     w1= w1.rstrip('\n')
+    w1= w1.rstrip(' ')
     d1 = w1
     d2=len(d1)
     #print("слово: ",d1)
