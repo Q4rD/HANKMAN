@@ -8,9 +8,20 @@ def game():
     ots1 = '---------------------\n'
     ots2 = '\n---------------------'
     #################################
+    
     ## ИГРА ##
+    ## Темы ##
+    print(ots1,"выберите тему.",ots2)
+    print("1. рандом")
+
+    spisk = input('тема: ')
+    
+    if spisk == '1':
+        spisk = open ('words1.txt', 'r')
+    clear()
+    ##########
     ## сложность ##
-    print(ots1,"чтобы выйти напишите: exit\nнапишите bonus чтобы добавить +3 попытки")
+    print(ots1,"Чтобы выйти напишите: exit.")
 
     print(ots1,"выберите сложность",ots2)
     dific = input("dificults: \n1. easy \n2. normal \n3. hard \n4. HAHAHAHAHAHAHAHA...\nсложность: ")
@@ -34,14 +45,15 @@ def game():
             quit()
     sleep(1)
     clear()
-    print(ots1,"чтобы выйти напишите: exit\nнапишите bonus чтобы добавить +3 попытки",ots2)
+    print(ots1,"Чтобы выйти напишите: exit.\nНапишите bonus чтобы добавить +3 попытки.",ots2)
     ###############
     test=False
     usedln=""
     win=[]
 
+    #spisk = open('words1.txt', 'r')
     # Список #####################
-    with open('words2.txt', 'r') as w:
+    with spisk as w:
         for i in w:
             # Рандомное слово ############
             w1 = random.choice(list(w))
@@ -65,9 +77,9 @@ def game():
     # Введите слово ##############
         while True:
             win1 = ' '.join(win)
-            print("использованные БуКвЫ:", ','.join(usedln))
+            print("Использованные БуКвЫ:", ','.join(usedln))
             print('( >-_-)> воть [',win1,']')          
-            let = input("\nввод:  ")
+            let = input("\nВвод:  ")
             print("---------------------")
             if let == "exit":
                 clear()
@@ -137,13 +149,10 @@ def game():
             sleep(0.4)
             clear()
             print(frame1)
-            sleep(0.4)
-            clear()
-            print(frame2)
         else:
             clear()
             print(ots1,"ВЫ ПОБЕДИЛИ!!! \n Слово было", d1.upper(),ots2)
-            sleep(2)
+            sleep(3)
             clear()
             quit()
     else:
@@ -153,7 +162,6 @@ def game():
         frame2 = '  про\n\(-_-)/'
         frame3 = 'вы\(-_-\)'
         frame4 ='(-_-)'
-
 
         a = 1
         while a < 3:
@@ -173,6 +181,6 @@ def game():
         else:
             clear()
             print(ots1,"вы проиграли \n Слово было", d1.upper(),ots2)
-            sleep(2)
+            sleep(3)
             clear()
             quit()
