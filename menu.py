@@ -12,7 +12,7 @@ menuPUT = input()
 if menuPUT == 'play':
     clear()
     for i in tqdm(range(100),desc='loading'):   
-        time.sleep(0.05)
+        time.sleep(0.04)
     clear()
     # os.system('python /content/drive/MyDrive/ColabNotebooks/ngrok/hankman.py')
     game()
