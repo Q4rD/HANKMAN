@@ -12,11 +12,13 @@ def game():
     ## ИГРА ##
     ## Темы ##
     print(ots1,"выберите тему.",ots2)
-    print("1. рандом")
+    print("1. random")
 
     spisk = input('тема: ')
     
     if spisk == '1':
+        sp = 'random'
+        print(ots1,"вы выбрали: ",sp,ots2)
         spisk = open ('words1.txt', 'r')
     clear()
     ##########
@@ -24,19 +26,23 @@ def game():
     print(ots1,"Чтобы выйти напишите: exit.")
 
     print(ots1,"выберите сложность",ots2)
-    dific = input("dificults: \n1. easy \n2. normal \n3. hard \n4. HAHAHAHAHAHAHAHA...\nсложность: ")
+    dific = input("сложность: \n1. easy \n2. normal \n3. hard \n4. HAHAHAHAHAHAHAHA...\nсложность: ")
     if dific == "1":
+        df = 'easy'
         attempt = 20
-        print(ots1,"dific: easy",ots2)
+        print(ots1,"сложность: easy",ots2)
     elif dific == "2":
+        df = 'normal'
         attempt = 10
-        print(ots1,"dific: normal",ots2)
+        print(ots1,"сложность: normal",ots2)
     elif dific == "3":
+        df = 'hard'
         attempt = 5
-        print(ots1,"dific: hard",ots2)
+        print(ots1,"сложность: hard",ots2)
     elif dific == "4":
+        df = 'HAHAHAHAHAHAHAHA...'
         attempt = 1
-        print(ots1,"dific: HAHAHAHAHAHAHAHA...",ots2)
+        print(ots1,"сложность: HAHAHAHAHAHAHAHA...",ots2)
     elif dific == "exit":
             clear()
             print(ots1,"Вы успешно ВЫШЛИ из игры.",ots2)
@@ -77,6 +83,9 @@ def game():
     # Введите слово ##############
         while True:
             win1 = ' '.join(win)
+            print("[сложность: ",df, ' ]')
+            print("[Тема: ",sp," ]")
+            print(" ")
             print("Использованные БуКвЫ:", ','.join(usedln))
             print('( >-_-)> воть [',win1,']')          
             let = input("\nВвод:  ")
