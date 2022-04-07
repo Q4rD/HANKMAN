@@ -86,6 +86,7 @@ def game():
             print("[сложность: ",df, ' ]')
             print("[Тема: ",sp," ]")
             print(" ")
+            print("Ваши попытки = ", attempt)
             print("Использованные БуКвЫ:", ','.join(usedln))
             print('( >-_-)> воть [',win1,']')          
             let = input("\nВвод:  ")
@@ -136,7 +137,6 @@ def game():
             print(ots1,"Верно (UwU)!",ots2)
             #print('[',win1,']')
     
-        print("Ваше здоровье = ", attempt)
     
     if(d2 == 0):
         clear = lambda: os.system('clear')
