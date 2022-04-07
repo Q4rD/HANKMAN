@@ -1,6 +1,9 @@
 import random
 import os
 from time import sleep
+from colorama import init, Fore
+
+init(autoreset = True)
 
 def game():
     #################################
@@ -102,11 +105,11 @@ def game():
             if let == "bonus":   
                 clear()
                 if iAttempts == True:           
-                    print(ots1,"Вы использовали бонус!!!",ots2)
+                    print(ots1,"\033[35m\033[1mВы использовали бонус!!!",ots2)
                     attempt +=3
                     iAttempts = False 
                 elif iAttempts == False:
-                    print(ots1,"Вы УЖЕ использовали бонус!!!",ots2)
+                    print(ots1,"\033[35m\033[1mВы УЖЕ использовали бонус!!!",ots2)
     ###################################            
             if let != "bonus":
                 if let in usedln or len(let)>1:
@@ -129,12 +132,12 @@ def game():
 
         if not test:
             attempt -= 1
-            print(ots1,"Неверно (-___-)",ots2)
+            print(ots1,"\033[31m\033[1mНеверно (-___-)",ots2)
             win1 = ' '.join(win)
             #print('[',win1,']')
         else:
             win1 = ' '.join(win)
-            print(ots1,"Верно (UwU)!",ots2)
+            print(ots1,"\033[32m\033[1mВерно (UwU)!",ots2)
             #print('[',win1,']')
     
     
