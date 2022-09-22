@@ -3,6 +3,9 @@ from tqdm import tqdm
 import time
 import os
 
+os.system('pip install colorama')
+os.system('pip install tpdm')
+
 from load import loading
 from hankman import game
 clear = lambda: os.system('clear')
